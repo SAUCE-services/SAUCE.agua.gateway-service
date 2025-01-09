@@ -1,7 +1,8 @@
 app:
+  port: ${APP_PORT:8080}
   eureka: 8761
   logging: debug
-  port: 8094
+  name: gateway-service
 
 server:
   port: ${app.port}
@@ -17,7 +18,7 @@ eureka:
 
 spring:
   application:
-    name: gateway-service
+    name: ${app.name}
   cloud:
     gateway:
       discovery:
@@ -44,3 +45,11 @@ logging:
     org:
       springframework.cloud.config: ${app.logging}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
