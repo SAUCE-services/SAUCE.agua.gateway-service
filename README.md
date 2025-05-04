@@ -5,6 +5,13 @@
 [![Build & Deploy](https://github.com/SAUCE-services/SAUCE.agua.gateway-service/actions/workflows/maven.yml/badge.svg)](https://github.com/SAUCE-services/SAUCE.agua.gateway-service/actions/workflows/maven.yml)
 [![Documentation Status](https://github.com/SAUCE-services/SAUCE.agua.gateway-service/actions/workflows/pages.yml/badge.svg)](https://github.com/SAUCE-services/SAUCE.agua.gateway-service/actions/workflows/pages.yml)
 
+## Tecnologías Usadas
+
+![Java](https://img.shields.io/badge/Java-21-blue?logo=java)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.5-brightgreen?logo=spring-boot)
+![Maven](https://img.shields.io/badge/Maven-3.x-C71A36?logo=apache-maven)
+![Docker](https://img.shields.io/badge/Docker-%231572B6.svg?logo=docker&logoColor=white)
+
 Gateway Service para la arquitectura de microservicios de SAUCE Agua. Este servicio actúa como punto de entrada único para todas las peticiones API, proporcionando enrutamiento dinámico a los diferentes microservicios.
 
 ## Enlaces Importantes
