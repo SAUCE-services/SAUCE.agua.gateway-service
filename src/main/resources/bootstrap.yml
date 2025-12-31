@@ -6,7 +6,6 @@ app:
     host: consul-service
     port: 8500
 
-
 server:
   port: ${app.port}
 

@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.3</version>
+		<version>3.5.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sauce.agua.gateway</groupId>
 	<artifactId>gateway-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>SAUCE.agua.gateway-service</name>
 	<description>sauce.agua.gateway-service</description>
 	<url/>
@@ -27,7 +27,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>24</java.version>
+		<java.version>25</java.version>
 		<spring-cloud.version>2025.0.0</spring-cloud.version>
 		<sonar.organization>sauce-services</sonar.organization>
 		<sonar.projectKey>SAUCE-services_SAUCE.agua.gateway-service</sonar.projectKey>

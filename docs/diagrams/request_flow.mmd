@@ -1,0 +1,21 @@
+graph TD
+    A[Cliente/API] -->|HTTP Request| B[Gateway Service :8080]
+    B -->|Service Discovery| C[Consul :8500]
+    C -->|Service Registration| D[Core Service]
+    C -->|Service Registration| E[Report Service]
+    C -->|Service Registration| F[PyAFIPWS Service]
+    
+    B -->|/api/core/**| D
+    B -->|/api/report/**| E
+    B -->|/api/afipws/**| F
+    
+    D -->|Response| B
+    E -->|Response| B
+    F -->|Response| B
+    B -->|Response| A
+    
+    style B fill:#e1f5fe
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style E fill:#e8f5e8
+    style F fill:#e8f5e8

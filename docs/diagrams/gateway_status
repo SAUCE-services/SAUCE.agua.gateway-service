@@ -1,0 +1,32 @@
+graph TB
+    subgraph "Gateway Service Architecture"
+        A[Gateway Service<br/>Port 8080] --> B[Spring Boot Actuator]
+        A --> C[Consul Discovery]
+        A --> D[Route Configuration]
+        
+        B --> E[/actuator/health]
+        B --> F[/actuator/info]
+        B --> G[/actuator/metrics]
+        
+        C --> H[Consul Agent<br/>:8500]
+        H --> I[Registered Services]
+        
+        D --> J[Core Service Route<br/>/api/core/**]
+        D --> K[Report Service Route<br/>/api/report/**]
+        D --> L[PyAFIPWS Route<br/>/api/afipws/**]
+    end
+    
+    subgraph "Monitoring & Health"
+        M[Health Checks] --> N[Service Status]
+        O[Metrics Collection] --> P[Performance Data]
+    end
+    
+    A -.-> M
+    A -.-> O
+    
+    style A fill:#e3f2fd
+    style B fill:#e8f5e8
+    style H fill:#fff3e0
+    style E fill:#ffebee
+    style F fill:#ffebee
+    style G fill:#ffebee
