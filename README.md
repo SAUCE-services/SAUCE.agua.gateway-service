@@ -8,8 +8,8 @@
 ## Tecnologías Usadas
 
 ![Java](https://img.shields.io/badge/Java-25-blue?logo=java)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.8-brightgreen?logo=spring-boot)
-![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-2025.0.0-brightgreen?logo=spring)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen?logo=spring-boot)
+![Spring Cloud](https://img.shields.io/badge/Spring%20Cloud-2025.1.0-brightgreen?logo=spring)
 ![Maven](https://img.shields.io/badge/Maven-3.x-C71A36?logo=apache-maven)
 ![Docker](https://img.shields.io/badge/Docker-%231572B6.svg?logo=docker&logoColor=white)
 ![Consul](https://img.shields.io/badge/Consul-%23F04C53.svg?logo=consul&logoColor=white)
