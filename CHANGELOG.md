@@ -4,6 +4,12 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-06
+
+### Changed
+- Upgrade Spring Boot from 4.0.6 to 4.1.0
+- Upgrade Spring Cloud from 2025.1.0 to 2025.1.2
+
 ## [0.1.0] - 2026-04-28
 
 ### Changed
