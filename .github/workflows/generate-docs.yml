@@ -22,10 +22,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up JDK 24
+      - name: Set up JDK 25
         uses: actions/setup-java@v4
         with:
-          java-version: '24'
+          java-version: '25'
           distribution: 'temurin'
           cache: maven
 
@@ -155,7 +155,7 @@ jobs:
                       });
 
                   // --- State Diagram ---
-                  fetch('diagrams/gateway-status.mmd')
+                  fetch('diagrams/gateway_status.mmd')
                       .then(response => response.text())
                       .then(data => {
                           const stateContainer = document.getElementById('state-diagram');
